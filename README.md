@@ -74,3 +74,8 @@ Again, you can launch the `npm run emit_logs` command, it will have the same tim
 If you succeed in the previous levels you can implement a CI/CD pipeline using github actions.
 We don't provide further indications for this exercice, implement the pipeline you think is relevant for this code.
 If you don't have enough time, no worry just explain us the steps you would have add in this pipeline.
+
+
+npm install --force
+npm run build:level_1
+npm run start:level_1

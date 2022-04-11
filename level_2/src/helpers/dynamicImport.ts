@@ -13,7 +13,8 @@ export class DynamicImport {
   }
 
   async dynamicImport() {
-    return Function('return import("../../../../lib/slowComputation.js")')
-    () as Promise<typeof import("../../../../lib/slowComputation.js")>;
+    // @ts-ignore
+    return Function('return import("../../../lib/slowComputation.js")')
+    () as Promise<typeof import("../../../lib/slowComputation")>;
   }
 }

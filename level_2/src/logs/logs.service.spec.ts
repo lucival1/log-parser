@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { LogsService } from './logs.service';
 import { LogDto, FormattedLogDto } from "./dto";
-import { DynamicImport } from "./helpers/dynamicImport";
+import { DynamicImport } from "../helpers/dynamicImport";
 
 describe('AppService Unit Test', () => {
   let logsService: LogsService;

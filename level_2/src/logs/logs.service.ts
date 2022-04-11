@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { createClient } from 'redis';
-import { DynamicImport } from "./helpers/dynamicImport";
+import { DynamicImport } from "../helpers/dynamicImport";
 import { FormattedLogDto } from "./dto";
 const client = createClient();
 

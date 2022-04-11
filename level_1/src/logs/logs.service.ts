@@ -16,7 +16,7 @@ export class LogsService {
 
   storeLog(log: ProcessedLogDto): string {
     const formattedLog: string = JSON.stringify(log, null, 4);
-    fs.writeFileSync(`src/logs/parsed/#${log.id}.json`, formattedLog);
+    fs.writeFileSync(`parsed/#${log.id}.json`, formattedLog);
 
     return JSON.parse(formattedLog);
   }

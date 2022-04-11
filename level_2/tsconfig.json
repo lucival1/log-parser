@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "lib": [
+      "ESNext"
+    ],
+    "module": "node12",
+    "moduleResolution": "Node",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "target": "es2017",
+    "target": "ESNext",
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",

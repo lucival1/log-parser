@@ -41,12 +41,13 @@ describe('AppService Unit Test', () => {
       expect(result).toStrictEqual(processedLogSample);
     });
   });
+
   describe('When call storeLog method with expected param', () => {
     it("should save the file and return a copy of the data", () => {
       const logsServiceSpy = jest.spyOn(logsService, 'storeLog');
       logsService.storeLog(processedLogSample);
 
-      const filePath = `src/logs/parsed/#${processedLogSample.id}.json`;
+      const filePath = `parsed/#${processedLogSample.id}.json`;
       const file = JSON.parse(fs.readFileSync(filePath).toString());
 
       fs.unlink(filePath, (err) => {
