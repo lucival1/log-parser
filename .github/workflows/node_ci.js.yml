@@ -28,8 +28,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         redis-version: '6.x'
-    - name: Redis is up
-      run: redis-cli ping
+        auto-start: "false"
     - name: Install dependencies
       run: npm install
     - name: Build artifact
