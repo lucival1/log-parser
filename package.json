@@ -9,7 +9,7 @@
     "emit_logs": "node lib/httpEmitter.js",
     "example_compute": "node exampleCompute.js",
     "test-og": "echo \"Error: no test specified\" && exit 1",
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "prebuild:level_1": "rimraf level_1/dist",
     "prebuild:level_2": "rimraf level_2/dist",
