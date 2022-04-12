@@ -76,6 +76,14 @@ We don't provide further indications for this exercice, implement the pipeline y
 If you don't have enough time, no worry just explain us the steps you would have add in this pipeline.
 
 
-npm install --force
-npm run build:level_1
-npm run start:level_1
+##How to run
+
+####1. Clone the project from this repository.
+####2. Open the terminal and move into the project root directory.
+####3. Run the Makefile command `make level_n`, n being the level you want to execute. This will install the necessary modules, build and initiate the correspondent server.
+####4. As the server will take control of the current terminal, we need to open a new terminal window/tab (in the project root directory) and run emit_logs command (using npm or make). The level should make the output as designed.
+####5. To start a different level you must stop the current server (if any is running) and use the make `level_n` command to start the desired level.
+####6. There is no Docker implementations. I have tried to implement Docker and make the project work, I got the images to docker and was able to initiate the server, but I had no success in making the objective of each level work (lvl1 save on parsed folder and lvl 2 save on redis - the communication didn't work as expected).
+####7. There is no CI/CD implementation. However, as part of the CI/CD pipeline I could implement different workflows, for instance
+ - A flow that once a PR is created the code integration tests are run, the Docker image is built and published, the code can then be push to a cloud host and finally deployed.
+ - This flow would need to have defined versions for node and Docker and make the connection with the cloud provider simpler.
