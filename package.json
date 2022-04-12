@@ -15,7 +15,7 @@
     "prebuild:level_2": "rimraf level_2/dist",
     "build:level_1": "nest build -p level_1/tsconfig.json",
     "build:level_2": "nest build -p level_2/tsconfig.json",
-    "start:level_1": "node level_1/dist/src/main",
+    "start:level_1": "node level_1/dist/main",
     "start:level_2": "node level_2/dist/main"
   },
   "author": "",
@@ -61,7 +61,7 @@
       "json",
       "ts"
     ],
-    "roots": ["level_1/src", "level_2/src"],
+    "roots": ["level_1/src", "level_2/src", "test"],
     "testRegex": ".*\\.spec\\.ts$",
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
