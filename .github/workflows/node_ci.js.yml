@@ -27,8 +27,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        redis-version: '6.x'
+        redis-version: '6.2'
         auto-start: "false"
+
     - name: Install dependencies
       run: npm install
     - name: Build artifact
